@@ -202,7 +202,7 @@ struct usb_interface_descriptor {
 	uint8_t iInterface;
 
 	/* Descriptor ends here.  The following are used internally: */
-	const struct usb_endpoint_descriptor *endpoint;
+	struct usb_endpoint_descriptor *endpoint;
 	const void *extra;
 	int extralen;
 } __attribute__((packed));
